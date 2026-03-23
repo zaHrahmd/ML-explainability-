@@ -42,15 +42,15 @@ We simulate **explanation-based model extraction attacks** using:
 The proposed defense consists of two stages:
 
 #### 1. Query Pattern Detection
-- Detects suspicious query clustering behavior
-- Uses feature-space distance and similarity thresholds
+- Detects suspicious query clustering behavior  
+- Uses feature-space distance and similarity thresholds  
 
 #### 2. Output Distortion (Poisoning)
-- Activated after detection
+- Activated after detection  
 - Applies:
-  - Label manipulation (second-best or random class)
-  - SHAP explanation distortion
-- Contaminates attacker training data
+  - Label manipulation (second-best or random class)  
+  - SHAP explanation distortion  
+- Contaminates attacker training data  
 
 ---
 
@@ -67,9 +67,15 @@ We evaluate the attack and defense across multiple datasets:
 
 ### Evaluation Metric
 
-- **Extraction Similarity (rtest_sim)**  
-Measures how closely the surrogate model matches the target model.
+- **Extraction similarity (rtest_sim)**  
+  Measures how closely the attacker’s surrogate model matches the target model  
+
+- **Detection rate**  
+  Percentage of runs where malicious behavior is detected  
+
+- **Detection delay**  
+  Number of queries before detection is triggered  
 
 ---
 
-## Repository Structure
+## Project Structure
