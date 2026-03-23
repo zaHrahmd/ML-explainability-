@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.bak
+.DS_Store
+experiment_1_backup.ipynb
