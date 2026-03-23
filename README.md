@@ -79,3 +79,20 @@ We evaluate the attack and defense across multiple datasets:
 ---
 
 ## Project Structure
+.
+├── step2_experiment.py     # Main experiment script (FINAL version used in report)
+├── utils.py                # Core pipeline: attack + defense implementation
+├── data/                   # Datasets
+├── plots/                  # Generated figures
+├── requirements.txt        # Dependencies
+└── README.md
+
+---
+
+## How to Run
+
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+
+python step2_experiment.py
